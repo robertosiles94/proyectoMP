@@ -1,0 +1,31 @@
+<!--
+  Generated template for the BuscarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Buscar</ion-title>
+  </ion-navbar>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="criterio" placeholder="Buscar"></ion-input>
+    <button ion-button item-end (click)="buscarEstablecimientosPorCriterio(criterio)">
+      <ion-icon name="search"></ion-icon>
+    </button>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <button (click)="abrirInformacionEstablecimiento()">boton</button>
+  <ion-list>
+    <button ion-item *ngFor="let est of establecimientos" (click)="abrirInformacionEstablecimiento(est.idEstablecimiento)">
+      <ion-thumbnail item-start>
+        <img src="img/iconoCategoria.png">
+      </ion-thumbnail>
+      <h2>{{est.Nombre}}</h2>
+      <p>Puntuacion: {{est.Calificacion}}</p>
+    </button>
+  </ion-list>
+</ion-content>
