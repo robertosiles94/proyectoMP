@@ -12,6 +12,7 @@ import 'rxjs/add/operator/map';
 export class ConfiguracionMaypiProvider {
 
   linkGeneral: string = "https://maypi.000webhostapp.com/"
+  baseURL: string = "localhost:9090/proyectoMP/MaypiB/";
 
   constructor(public http: Http) {
     
@@ -19,6 +20,10 @@ export class ConfiguracionMaypiProvider {
 
   getLinkGeneral() {
     return this.linkGeneral;
+  }
+
+  getBaseUrl() {
+    return this.baseURL;
   }
 
 }

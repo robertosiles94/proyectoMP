@@ -2,7 +2,7 @@
     "name": "maypi",
     "version": "0.0.1",
     "author": "Univalle - SOCEISI TEAM",
-    "homepage": "http://ionicframework.com/",
+    "homepage": "http://www.univalle.edu/",
     "private": true,
     "scripts": {
         "clean": "ionic-app-scripts clean",
